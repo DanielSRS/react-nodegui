@@ -29,7 +29,6 @@ export const setListItemProps = (
  * @ignore
   */
 export class RNListItem extends QListWidgetItem implements RNComponent {
-  native: any;
   actualListItemWidget?: QWidget<any>;
 
   setProps(newProps: ListItemProps, oldProps: ListItemProps): void {

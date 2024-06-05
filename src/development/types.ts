@@ -1,4 +1,4 @@
-declare module "react-proxy" {
+/* declare module "react-proxy" {
   interface ReactProxyComponent {
     update(Component: React.ComponentType): void;
     get(): React.ComponentType;
@@ -7,3 +7,4 @@ declare module "react-proxy" {
     Component: React.ComponentType
   ): ReactProxyComponent;
 }
+ */

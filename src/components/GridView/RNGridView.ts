@@ -74,7 +74,6 @@ const setGridViewProps = (
  * @ignore
  */
 export class RNGridView extends QWidget implements RNComponent {
-  native: any;
   initialProps?: GridViewProps;
   childRows: Array<DataWithOffset<RNGridRow>> = [];
 

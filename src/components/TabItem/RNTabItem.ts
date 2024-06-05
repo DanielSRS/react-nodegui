@@ -40,7 +40,6 @@ export const setTabItemProps = (
  * @ignore
  */
 export class RNTabItem extends Component implements RNComponent {
-  native: any;
   actualTabWidget?: QWidget<any>;
   initialProps: TabItemProps = {};
   parentTab?: RNTab;

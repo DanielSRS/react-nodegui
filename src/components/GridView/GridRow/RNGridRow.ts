@@ -35,7 +35,6 @@ const setGridRowProps = (
 };
 
 export class RNGridRow extends Component implements RNComponent {
-  native: any;
   parentGrid?: RNGridView;
   latestProps?: GridRowProps;
   prevProps?: GridRowProps;
