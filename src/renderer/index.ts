@@ -10,6 +10,7 @@ type NodeGuiReconciler = Reconciler<
   RNComponent,
   any,
   Set<QWidget<any>>,
+  any,
   any
 >;
 
@@ -40,8 +41,13 @@ export class Renderer {
 
     Renderer.container = reconciler.createContainer(
       containerInfo,
+      0,
+      null,
+      true,
       isConcurrent,
-      hydrate
+      'pref',
+      () => console.log('Recoverable error'),
+      null,
     ); // Creates root fiber node.
 
     (rendererOptions.onInit as Function)(reconciler);

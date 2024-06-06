@@ -2,6 +2,7 @@ import { QWidget, WindowState, QCursor, CursorShape, QIcon, FlexLayout, WidgetEv
 import { NativeRawPointer } from "@nodegui/nodegui/dist/lib/core/Component";
 import { QDialog } from "@nodegui/nodegui/dist/lib/QtWidgets/QDialog";
 import { RNWidget, RNProps } from "../config";
+import type { ReactNode } from "react";
 
 /**
  * The View component can be used to encapsulate other components and provide structure.
@@ -112,6 +113,7 @@ export interface ViewProps<Signals extends {}> extends RNProps {
    * `<View windowFlags={{[WindowType.SplashScreen]: true}} />`
    */
   windowFlags?: WindowFlagsMap;
+  children?: ReactNode;
 }
 
 /**
