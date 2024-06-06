@@ -37,7 +37,6 @@ const setGridColumnProps = (
 };
 
 export class RNGridColumn extends Component implements RNComponent {
-  native: any;
   actualWidget?: QWidget<any>;
   parentRow?: RNGridRow;
   latestProps?: GridColumnProps;

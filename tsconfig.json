@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "commonjs",
+    "target": "es2022",
+    "lib": ["es2023"],
+    "module": "node16",
     "jsx": "react",
     "declaration": true,
     "outDir": "./dist",
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node16",
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true
   },
   "include": ["./src/**/*"],
   "exclude": ["dist"],

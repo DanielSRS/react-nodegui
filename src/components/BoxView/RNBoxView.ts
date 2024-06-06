@@ -32,7 +32,6 @@ const setBoxViewProps = (
  * @ignore
  */
 export class RNBoxView extends QWidget implements RNComponent {
-  native: any;
   initialProps?: BoxViewProps;
   _children: Array<QWidget<any>> = [];
 
