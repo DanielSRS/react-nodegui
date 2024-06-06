@@ -25,13 +25,13 @@
     node-fetch "^2.6.0"
     progress "^2.0.3"
 
-"@nodegui/nodegui@^0.57.1":
-  version "0.57.1"
-  resolved "https://registry.yarnpkg.com/@nodegui/nodegui/-/nodegui-0.57.1.tgz#dcab2a3c9beeb744669c87f18809f03b44074dfd"
-  integrity sha512-husxEJeohB6WHoxa+ob9/BoNhPc/WJL3NQOGmfjb6DZMuPe3bwVu/E/63bvGp7SZbZ3hsIM8l4J5x99U/4WYbA==
+"@nodegui/nodegui@0.67.0":
+  version "0.67.0"
+  resolved "https://registry.yarnpkg.com/@nodegui/nodegui/-/nodegui-0.67.0.tgz#c87242c5356e49273b8c725267c4ee9929c834ea"
+  integrity sha512-igg2d64wcIpcQXx7At1TU8XrlE4FF6+UTDvfQzipwzlcp4VtOfO0KxkgPJJml4mFxDwhZBOamxvF+DtgeVAiVw==
   dependencies:
     "@nodegui/artifact-installer" "^1.1.0"
-    "@nodegui/qode" "^16.4.3"
+    "@nodegui/qode" "^18.12.1"
     cmake-js "^6.2.1"
     cross-env "^7.0.3"
     cuid "^2.1.8"
@@ -42,10 +42,10 @@
     postcss-nodegui-autoprefixer "0.0.7"
     tar "^6.0.1"
 
-"@nodegui/qode@^16.4.3":
-  version "16.4.3"
-  resolved "https://registry.yarnpkg.com/@nodegui/qode/-/qode-16.4.3.tgz#ddae8f683ef958676b0a4d69e972f471d6bfd359"
-  integrity sha512-WllfJVXffr3Rn7BSfo5cubZ5hx4OnQ7iqY/kj+2jwqUepzlRFKCvn9/vAJ/VXmiB0GZGcaCGM0U3rZGADdU5mw==
+"@nodegui/qode@^18.12.1":
+  version "18.12.1"
+  resolved "https://registry.yarnpkg.com/@nodegui/qode/-/qode-18.12.1.tgz#9190df002e86ff1b0d47d6c2a683b8aef92c3c9e"
+  integrity sha512-iJdNwMPif+NkbZeXQPek6IfKmmHt04Iy1dlRGVFaICU5nSpNDsSmzGxHrVdllQWGGzqvre82BOV3CgMxclGZtQ==
   dependencies:
     env-paths "^2.2.1"
     make-dir "^3.1.0"
@@ -70,7 +70,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@^16.14.0", "@types/react@*":
+"@types/react@*", "@types/react@^16.14.0":
   version "16.14.32"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.32.tgz#d4e4fe5ece3c27fcb4608b1f4a614f7dec881392"
   integrity sha512-hvEy4vGVADbtj/U6+CA5SRC5QFIjdxD7JslAie8EuAYZwhYY9bgforpXNyF1VFzhnkEOesDy1278t1wdjN74cw==
