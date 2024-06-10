@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc && qode ./dist/demo.js",
+    "dev": "tsc && qode ./dist/showcase/ViewStyles.js",
     "docs": "typedoc && node ./website/docs/scripts/fixdocs.js",
     "test": "jest"
   },

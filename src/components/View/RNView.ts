@@ -2,7 +2,9 @@ import { QWidget, WindowState, QCursor, CursorShape, QIcon, FlexLayout, WidgetEv
 import { NativeRawPointer } from "@nodegui/nodegui/dist/lib/core/Component";
 import { QDialog } from "@nodegui/nodegui/dist/lib/QtWidgets/QDialog";
 import { RNWidget, RNProps } from "../config";
+import { convertStyles } from "../../utils/convertStyles";
 import type { ReactNode } from "react";
+import type { ViewStyleProp } from "./View.types";
 
 /**
  * The View component can be used to encapsulate other components and provide structure.
@@ -41,7 +43,7 @@ export interface ViewProps<Signals extends {}> extends RNProps {
   /**
    * Sets the inline stylesheet property. [QWidget: setInlineStyle](https://docs.nodegui.org/docs/api/generated/classes/QWidget#widgetsetinlinestylestyle)
    */
-  style?: string;
+  style?: ViewStyleProp;
   /**
    * Sets the screen position as well as size of the widget. [QWidget: setGeometry](https://docs.nodegui.org/docs/api/generated/classes/QWidget#widgetsetgeometryx-y-width-height)
    */
@@ -127,11 +129,11 @@ export function setViewProps<Signals extends {}>(widget: QWidget<any>, newProps:
     set styleSheet(styleSheet: string) {
       widget.setStyleSheet(styleSheet);
     },
-    set style(inlineStyle: string) {
+    set style(inlineStyle: ViewStyleProp) {
       if (newProps.styleSheet) {
         console.warn("Both styleSheet and inlineStyle can't be used together");
       }
-      widget.setInlineStyle(inlineStyle);
+      widget.setInlineStyle(convertStyles(inlineStyle));
     },
     set geometry(geometry: Geometry) {
       widget.setGeometry(geometry.x, geometry.y, geometry.width, geometry.height);
